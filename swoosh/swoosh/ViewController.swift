@@ -10,9 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var backgroudImage: UIImageView!
+    @IBOutlet weak var swooshLabel: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        swooshLabel.frame = CGRect(x: view.frame.size.width/2 - swooshLabel.frame.size.width/2, y: 50, width: swooshLabel.frame.size.width, height: swooshLabel.frame.size.height)
+        
+        backgroudImage.frame = view.frame
     }
 
 
