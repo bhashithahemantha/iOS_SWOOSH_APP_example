@@ -82,10 +82,6 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <connections>
-                        <outlet property="backgroudImage" destination="KOO-uk-EHS" id="FHj-U2-iQc"/>
-                        <outlet property="swooshLabel" destination="j1U-Vz-Z6v" id="SwH-Fb-Fbo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,6 +122,9 @@
                                 <state key="normal" title="NEXT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNextTapped:" destination="sa6-Fx-TdL" eventType="touchUpInside" id="c7d-7L-cUy"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="yuu-5x-JYW">
                                 <rect key="frame" x="16" y="176" width="343" height="190"/>
@@ -197,6 +196,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="WBh-xS-HBK"/>
                     </view>
+                    <connections>
+                        <segue destination="vlM-91-Wje" kind="show" identifier="skillVCSegue" id="DhY-ir-UJG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q1K-5r-NEx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Ydp-eV-NDo" userLabel="Exit" sceneMemberID="exit"/>

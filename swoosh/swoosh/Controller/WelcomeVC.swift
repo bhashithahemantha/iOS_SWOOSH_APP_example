@@ -9,9 +9,6 @@
 import UIKit
 
 class WelcomeVC: UIViewController {
-
-    @IBOutlet weak var backgroudImage: UIImageView!
-    @IBOutlet weak var swooshLabel: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
